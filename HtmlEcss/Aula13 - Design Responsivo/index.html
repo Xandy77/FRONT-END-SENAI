@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="styles/@MediaMobile.css">
+</head>
+<body>
+    <header>
+        <div id="logo"></div>
+        Um logo muito massa!
+
+        <div>
+            <button id="btnMenu" oneclick="menu()"> X </button>
+
+        </div>
+       
+        <nav id="menuPc">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Pagina1</a></li>
+                <li><a href="#">Pagina2</a></li>
+
+            </ul>
+
+
+        </nav>
+
+        <nav  id="MenuMobile">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Pagina1</a></li>
+                <li><a href="#">Pagina2</a></li>
+
+            </ul>
+
+
+        </nav>
+
+        
+    </header>
+
+    <main>
+        <!--<img src="images/mulherdancando.jpg" alt="Uma Mulher Dancando"> -->
+
+        <picture>
+            <source media="screen and (max-width : 700px)" srcset="images\images\mulherdancandoMenor.jpg">
+            <img src="images/images/mulherdancando.jpg" alt="Um Banner">
+
+
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam velit deserunt ratione laborum illum nihil. Nesciunt expedita laborum saepe, corporis aliquid accusantium autem voluptates provident cum. Explicabo nihil quae quam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam velit deserunt ratione laborum illum nihil. Nesciunt expedita laborum saepe, corporis aliquid accusantium autem voluptates provident cum. Explicabo nihil quae quam.</p>
+
+    </main>
+
+
+    <footer>
+        Todos os direitos reservados!
+    </footer>
+
+    <script>
+        function menu(){
+            if(menuMobile.style.display == "nome"){
+                menuMobile.style.display = "flex"
+            }else{
+                    menuMobile.style.display = "nome"
+                }
+
+            }
+
+      
+
+    </script>
+    
+</body>
+</html>
